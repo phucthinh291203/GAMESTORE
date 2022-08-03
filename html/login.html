@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> 
+  
+  <title>Login</title>
+</head>
+<body>
+  
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle" onclick="login()">Login</button>
+        <button type="button" class="toggle" onclick="register()">Register</button>
+      </div>
+      <div class="social-icon">
+        <img src="/img/Facebook.png" alt="">
+        <img src="/img/Google.png" alt="">
+        <img src="/img/Instagram.png" alt="">
+    </div>
+    <form id="login" class="input-group">
+      <input type="text" class="input-field" placeholder="Tài khoản" required>
+      <div class="container flex">
+        <input id="password" type="password" class="input-field" placeholder="Mật khẩu" required>
+        <span onclick="showpassword()"><i class="fa-solid fa-eye"></i></span>
+        </div>
+      <input type="checkbox" class="check-box" > <span>Nhớ mật khẩu</span>
+      <button onclick="ThongBaoKhiAnDangNhap();" class="submit-btn" id="login-btn" class="submit-btn">Đăng nhập</button>
+    </form>
+
+    <form id="register" class="input-group">
+      <input type="text" class="input-field" placeholder="Tài khoản" required>
+      <input type="email" class="input-field" placeholder="Email" required>
+      <div class="container">
+        <input id="password1" type="password" class="input-field" placeholder="Mật khẩu" required>
+        <span onclick="showpassword1()" ><i class="fa-solid fa-eye"></i></span>
+      </div>
+      <div class="container">
+        <input id="password2" type="password" class="input-field" placeholder="Nhập lại mật khẩu" required>
+        <span onclick="showpassword2()" ><i class="fa-solid fa-eye"></i></span>
+      </div>
+      <input onclick="agree()" type="checkbox" class="check-box" > <span>Tôi đồng ý <a href="#">chính sách và điều khoản</a></span>
+      <button onclick="ThongBaoKhiAnDangKy();" class="submit-btn" id="register-btn"  >Đăng ký</button>
+    </form>
+    </div>
+  </div>
+  <script src="/js/login.js"></script>
+  <a class="goback" href="/html/index.html"><i class="fa-solid fa-circle-left"></i> Quay về trang chủ</a>
+   
+</body>
+</html>

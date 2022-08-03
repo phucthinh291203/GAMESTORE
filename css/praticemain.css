@@ -1,0 +1,188 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box !important;
+}
+
+body{
+    
+    background-color:#D2691E;
+    margin:8px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size:16px;
+}
+
+:root{
+    --width:70%;
+}
+
+header{
+    background-color:lightblue;
+    display:flex;
+    width:var(--width);
+    margin:0 auto;
+}
+
+header > div{
+    display:flex;
+    align-items:center;
+    width:100%;
+    
+}
+
+
+ul.menu{
+    display:flex;
+    position:relative;
+    text-align:center;
+    margin-top:auto;
+    margin-left:auto;
+}
+
+
+ul.menu > li{
+    margin-left:5px;
+    list-style-type: none;
+}
+
+ul.menu > li > a{
+    padding:15px 20px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(blue,lightblue);
+    border-radius:15px 15px 0 0;
+    display:block;
+}
+
+
+ul.menu .subcontent{
+    display:none;
+    position:absolute;
+}
+
+ul > ul{
+    list-style-type: none;
+}
+
+ul.menu > .subcontent > li {
+    display: list-item;
+}
+
+.subcontent > li {
+    margin-top:2px;
+}
+
+ul.menu .sub:hover > .subcontent {
+    display:block !important;
+    position:absolute;
+}
+
+aside.ads > div{
+    background-color:blueviolet;
+    color:white;
+    text-align:center;
+    width:calc((100% - var(--width)) / 2 - 2%);
+    padding:5.5rem 5px;
+    position:fixed;
+}
+
+aside.ads > div:first-child{
+    left: 1%;
+}
+aside.ads > div:last-child{
+   right: 1%;
+}
+
+section.container{
+    width:var(--width);
+    margin:0 auto;
+    text-align:center;
+    font-size:1.5em;
+}
+
+div.products{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+div.product{
+    width:25%;
+    padding:15px;
+}
+
+div.product > div{
+    border:2px solid blue;
+    border-radius:15px;
+    padding:10px;
+    position:relative;
+    overflow:hidden;
+    font-size:1.5em;
+}
+
+div.product h2 , div.product h3{
+    font-size:20px;
+    font-weight:bold;
+    text-align:left;
+}
+
+@keyframes doimau {
+    0% {
+        background-color: gold;
+    }
+    25% {
+        background-color: aquamarine;
+    }
+    75% {
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: brown;
+    }
+}
+
+div.promo {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    background-color: gold;
+    color: red;
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 15px;
+    animation: doimau 2s infinite;
+}
+div.product img {
+    width: 100%;
+    transition: transform ease-in 1s;
+   
+}
+
+div.product img:hover{
+    transform:scale(1.2);
+}
+
+h1.subject{
+    color:darkblue;
+    text-shadow:3px 4px 3px blue;
+}
+
+h1.subject::after{
+    content:"---o0o---";
+    color:darkblue;
+    display:block;
+    font-size:1rem;
+    text-shadow:none;
+}
+
+.subcontent::after{
+    content:"";
+    border-width:10px;
+    position:absolute;
+    right:80%;
+    bottom:100%;
+    border-style:solid;
+    border-color:transparent transparent yellow transparent;
+}

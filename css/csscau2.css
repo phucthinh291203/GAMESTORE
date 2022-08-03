@@ -1,0 +1,127 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+
+:root{
+    --width:80%;
+    --height:400px;
+    --min-width:20%;
+
+}
+
+.flex {
+    display:flex;
+    align-items:center;
+}
+
+header{
+    background:linear-gradient(lightblue,white,lightblue);
+    justify-content: space-between;
+    padding:10px;
+}
+
+
+header img{
+    width:150px;
+}
+
+.ads > div {
+    background-color:aquamarine;
+    border:1px dashed black;
+    padding:4rem 5px;
+    margin:3px;
+}
+
+nav{
+    
+    margin-top:2px;
+}
+
+.menu{
+    padding:0;
+    list-style-type:none;
+    color:blue;
+    background-color:lightskyblue;
+}
+
+ul.menu > li {
+    border-right:1px solid black;
+    min-width:150px;
+    text-align: center;
+}
+
+ul.menu > li > a{
+    text-decoration: none;
+    display:block;
+    padding:10px;
+}
+
+section{
+    align-items:flex-start !important;
+    background-color:lightblue;
+}
+
+.left{
+    width:calc(100% - var(--width));
+    background-color:lightblue;
+    margin:1px;
+}
+
+.left h1{
+    text-align:center;
+}
+
+.right{
+    width:var(--width);
+}
+
+ul.v-menu > li{
+    border-right:none !important;
+    margin:1px;
+    text-align:left;
+}
+
+.books{
+    flex-wrap:wrap;
+}
+
+.book{
+    width:var(--min-width);
+    padding:1%;
+    text-align:center;
+}
+
+.book img{
+    width:100%;
+}
+
+
+footer {
+    background-color:aquamarine ;
+    font-weight:bold;
+    padding:15px;
+    margin-top:1px;
+    overflow:hidden;
+    width:100%;
+}
+
+@keyframes dichuyen{
+    from {
+        left:0;
+        color:red;
+    }
+    
+    to {
+        left:102%;
+        color:green;
+    }
+}
+
+.rightcopy{
+    position: relative;
+    animation:15s infinite;
+    animation-name:dichuyen;
+    color:black;
+
+}
