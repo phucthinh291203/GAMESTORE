@@ -167,49 +167,21 @@ nav .subcontent > li{
 }
 
 
-.button {
-
-    color:cornsilk;
-    text-decoration:none;
-    margin:10px;
-    padding:15px;
-    min-width:60px;
-    font-weight:bold;
-    font-size:18px;
-    list-style-type: none;
-    border:0 !important;
-}
-
-
-
-
-.account  .button.one{
-   border:1px solid orange;
-   color:white;
-   border-radius:50%;
-   font-size:20px;
-}
-
-
-
-.account  .button.two{
-    border:1px solid red;
-    color:white;
-    border-radius:50%;
+.menu li.login{
+    margin:0 0 0 435px;
     font-size:20px;
-    margin-left:30px
- }
+    padding:0;
+    line-height:0px;
+}
+
+
+
+
+
+
+
  
- header li:hover > a{
-    color:#01d6fe !important;
-    transition:0.5s
- }
-
-
-
- header li:hover .button.one,header li:hover .button.two{
-    background-color:#E3454B ;transform:scaleY(1);
- }
+ 
 
 
 
@@ -563,21 +535,25 @@ section{
 
 
 
-#search-box{
+ #search-box{
     background-color:#fff;
     border-radius:30px;
+    line-height:0;
+    padding:15px;
+    margin:0 0 0 280px;
 }
 
 #search-box #search-text{
+   
     border:none;
     outline:none;
     background:none;
     padding:10px 15px;
-    font-size:15px;
+    font-size:18px;
     width:0;
     padding:0;
     transition:all 0.25s ease-in-out;
-}
+} 
 
 #search-box:hover #search-text{
     width:300px;
@@ -587,8 +563,11 @@ section{
 
 
 #search-box #search-btn{
-    background-color:black;
+    background-color:transparent;
+    border:none;
     cursor:pointer;
     padding:15px;
     border-radius:50%;
-}
+    padding:10px 10px;
+    right:0;
+} 
