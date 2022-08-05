@@ -59,7 +59,7 @@ header span{
 }
 
 header{
-   background-image:url(/GAMESTORE/img/banner.png);
+   background-image:url(/img/banner.png);
     justify-content: space-around;
     padding:5px;
     align-items:center;
@@ -99,7 +99,7 @@ ul.menu{
 }
 
 nav{
-    background:linear-gradient(to left,rgb(123, 0, 255), blue);
+    background:linear-gradient(to left,rgb(123, 0, 255), blue,#0F0330);
 }
 
 
@@ -325,70 +325,17 @@ section {
     color:#fff;
 }
 
-
+/*  slider */
 .slidershow{
     width:var(--min-width);
-    height:400px;
-    overflow:hidden;
-    position:relative;
-    margin:0 auto;
+    margin:20px auto;
 }
 
 .slidershow img{
     width:100%;
 }
 
-.navigation{
-    position:absolute;
-    margin:center !important;
-    display:flex;
-    
-}
-.bar{
-    width:20px;
-    height:20px;
-    border:2px solid red;
-    background-color:yellow;
-    border-radius:50%;
-    margin:10px;
-    cursor:pointer;
-}
-
-.bar:hover {
-    background-color:black;
-    transition:0.6;
-    border:2px solid red;
-}
-
-input[name="bottom"]{
-    position:absolute;
-    visibility: hidden;
-}
-
- .slides{
-    width:200%;
-    display:flex;
-}
-
- .slide{
-    transition:1s;
-    width:50%;
-}
-
- .slide img{
-    width: 100%;
-	height: 100%;
-}
-
-
-
-#bottom_1:checked ~ .s1{
-     margin-left:0;
-}
-
-#bottom_2:checked ~ .s1{
-    margin-left:-50%;
-}
+/* end slider */
 
 section{
    width:var(--min-width);

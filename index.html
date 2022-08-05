@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="/js/index.js"></script>
 <body>
     <header class="flex">
         <div class="flex">
@@ -26,7 +27,7 @@
         <div class="account">
             <ul class="button flex">
                 <li><a class="button one" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a class="button two" href="/GAMESTORE/login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+                <li><a class="button two" href="/login.html"><i class="fa-solid fa-circle-user"></i></a></li>
             </ul>
         </div> 
            
@@ -49,29 +50,10 @@
 
             </ul>
    </nav>    
-
-   <div class="slidershow">
-        <div class="slides">
-            <input type="radio" name="bottom" id="bottom_1" checked>
-            <input type="radio" name="bottom" id="bottom_2">
-
-            <div class="slide s1">
-              <img src="img/screen_index_2.jpg" alt="slideshow">
-            </div>
-
-            <div class="slide" >
-                <img src="img/screen_index.jpg" alt="slideshow">
-            </div>
-        
-
-            <div class="navigation">
-              <label for="bottom_1" class="bar"></label>
-              <label for="bottom_2" class="bar"></label>
-            </div>   
-          
-
-        </div>
-   </div>
+   <div class="image slidershow">
+    <img id="img" onclick="changeImage();" src="img/screen_index_2.jpg" alt="" >
+    </div>
+   
 
 
    <section class="content flex2">
@@ -169,7 +151,7 @@
 
                             <li class="flex2">
                                 <div class="game">
-                                
+                            
                                     <div><img src="img/productgame.jpg" alt="game"></div>
                                     
                                 </div>
@@ -390,6 +372,13 @@
                 <a href="#"><i class="fa-solid fa-plus"></i></a>
                 </div>
             </div>
+
+
+            
+                  
+        
+                </div>
+           </div>    
    </section>
 
    <a href="#" class="gotopbutton"><i class="fa-solid fa-circle-arrow-up"></i></a>
