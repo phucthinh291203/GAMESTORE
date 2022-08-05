@@ -13,23 +13,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <body>
     <header class="flex">
         <div class="flex">
-            
             <div class="img banner">   
-            <div class="logo"><img src="img/logogame2-removebg.png" alt="logo"></div>
+            <div class="logo"><img src="img/logogame2-removebg.png"  alt="logo"></div>
             </div>
              <span><h1 class="animate__animated animate__lightSpeedInRight">Shop bán game lớn nhất Việt Nam</h1> </span>
              </div>
         </div>
 
-        <div class="account">
+        <div class="account flex align-center">
             <ul class="button flex">
-                <li><a class="button one" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a class="button two" href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+                <li><a class="button two" href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>    
+                <li >
+                    <form class="thanhtimkiem" action="" id="search-box">
+                        <button id="seacrh-btn"><i class=" fa-solid fa-magnifying-glass"></i> </button>
+                        <input type="text" id="search-text">
+                        
+                       
+                        
+                    </form>
+                </li>
+                
             </ul>
         </div> 
+
+        
            
 
     </header>
@@ -42,12 +53,12 @@
                         <li><a href="#">Game bản quyền</a></li>
                         <li><a href="#">Game miễn phí</a></li>
                         <li><a href="#">Game trực tuyến</a></li>
+                        
                     </ul>
                 <li><a href="#"> Tin tức & Thông báo</a></li>
         
                 <li><a href="#">Liên hệ</a></li>
-
-
+                
             </ul>
    </nav>    
    <div class="image slidershow">
@@ -432,7 +443,7 @@
                     </li>
 
                     <li>
-                        <form class="form">
+                        <form class="formemail">
                             <input class="email" type="email" placeholder="Đăng ký email">
                             <button type="button">Gửi</button>
 

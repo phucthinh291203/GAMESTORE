@@ -23,6 +23,10 @@
     text-align:left;
 }
 
+.align-center{
+    align-items:center;
+}
+
 .block{
     display:block;
 }
@@ -90,6 +94,9 @@ header img{
     height:120px;
     margin-top:-19px;
 }
+
+
+
 
 
 ul.menu{
@@ -173,6 +180,9 @@ nav .subcontent > li{
     border:0 !important;
 }
 
+
+
+
 .account  .button.one{
    border:1px solid orange;
    color:white;
@@ -180,11 +190,14 @@ nav .subcontent > li{
    font-size:20px;
 }
 
+
+
 .account  .button.two{
     border:1px solid red;
     color:white;
     border-radius:50%;
     font-size:20px;
+    margin-left:30px
  }
  
  header li:hover > a{
@@ -192,10 +205,15 @@ nav .subcontent > li{
     transition:0.5s
  }
 
+
+
  header li:hover .button.one,header li:hover .button.two{
-    background-color:#E3454B ;
-   
+    background-color:#E3454B ;transform:scaleY(1);
  }
+
+
+
+ 
 
  footer{
     background-color:#010101;
@@ -290,14 +308,14 @@ footer i{
     background-color:#FF0000;
 }
 
-form input.email{
+.formemail input.email{
     height:40px;
     width:240px;
     font-size:18px;
     padding:3px;
 }
 
-form button{
+.formemail button{
     font-size:20px;
     padding:5px 20px;
     margin-top:10px;
@@ -307,7 +325,7 @@ form button{
     border:#FF0000;
 }
 
-form button:hover{
+.formemail button:hover{
     background-color:#FF0000;
     border:#FF0000;
 }
@@ -541,4 +559,36 @@ section{
 .noibat img:hover{
     transform:skewX(-15deg);
     transition:transform 0.2s;
+}
+
+
+
+#search-box{
+    background-color:#fff;
+    border-radius:30px;
+}
+
+#search-box #search-text{
+    border:none;
+    outline:none;
+    background:none;
+    padding:10px 15px;
+    font-size:15px;
+    width:0;
+    padding:0;
+    transition:all 0.25s ease-in-out;
+}
+
+#search-box:hover #search-text{
+    width:300px;
+    padding:5px 15px;
+    border:none;
+}
+
+
+#search-box #search-btn{
+    background-color:black;
+    cursor:pointer;
+    padding:15px;
+    border-radius:50%;
 }

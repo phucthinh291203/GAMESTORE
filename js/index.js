@@ -10,3 +10,12 @@ var index =1;
 
  setInterval(changeImage,3000);
 
+
+function TaoThanhSearch(){
+        document.getElementsByClassName('search-form').style.scaleY = 1;
+}
+
+let searchForm = document.querySelector('.search-form');
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+}
