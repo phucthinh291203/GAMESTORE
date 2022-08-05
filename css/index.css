@@ -59,7 +59,7 @@ header span{
 }
 
 header{
-   background-image:url(img/banner.png);
+   background-image:url("/img/banner.png");
     justify-content: space-around;
     padding:5px;
     align-items:center;
