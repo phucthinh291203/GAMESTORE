@@ -11,7 +11,9 @@
     --width-section:75%;
 }
 
-
+.center{
+    text-align:center;
+}
 
 .flex {
     display:flex;
@@ -34,6 +36,8 @@
 .list{
     margin-top:10px;
 }
+
+
 
 .list,.list > li > a{
     list-style-type:none;
@@ -119,9 +123,10 @@ ul.menu > li > a{
     color:white;
     text-decoration:none;
     display:block;
-    text-transform: uppercase;
+    text-transform:uppercase;
     font-weight:bold;
     padding:15px;
+    font-size:16px;
 }
 
 
@@ -168,8 +173,8 @@ nav .subcontent > li{
 
 
 .menu li.login{
-    margin:0 0 0 435px;
-    font-size:20px;
+    margin:0 0 0 30%;
+    
     padding:0;
     line-height:0px;
 }
@@ -327,7 +332,7 @@ section {
 
 /* end slider */
 
-section{
+.content{
    width:var(--min-width);
     margin:0 auto;
     
@@ -535,6 +540,8 @@ section{
 
 
 
+/*thanh search */
+
  #search-box{
     background-color:#fff;
     border-radius:30px;
@@ -544,7 +551,7 @@ section{
 }
 
 #search-box #search-text{
-   
+   position:relative;
     border:none;
     outline:none;
     background:none;
@@ -559,6 +566,7 @@ section{
     width:300px;
     padding:5px 15px;
     border:none;
+    
 }
 
 
@@ -571,3 +579,159 @@ section{
     padding:10px 10px;
     right:0;
 } 
+
+/* ket thuc thanh search */
+
+/* auto slide */
+.slider{
+	height:400px;
+	margin:auto;
+	position:relative;
+	width:100%;       /* chinh thang nay */
+	display:grid;
+	place-items:center;
+	overflow:hidden;
+
+}
+
+@keyframes scroll{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform:translateX(calc(-250px * 9));
+	}
+}
+
+.slide-track{
+	display:flex;
+	width:calc(250px *18);
+	animation:scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+	animation-play-state: paused;
+}
+
+.slide{
+	height:400px;  /* <---- chinh thang nay ---> */
+	width:250px;
+	display:flex;
+	align-items:center;
+	padding:15px;
+	perspective: 100px;
+}
+
+.slider::before,.slider::after{
+	/* background:linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); */
+	content:"";
+	height:100%;
+	position:absolute;
+	width:90%;
+	z-index:2;
+}
+.slider::before{
+	left:0;
+	top:0;
+}
+.slider::after{
+	right:0;
+	top:0;
+	transform:rotatez(180deg);
+}
+img{
+	transition:transform 1s;
+	width:100%;
+}
+
+img:hover{
+	transform:translateZ(20px);
+}
+
+.auto-slide{
+	height:400px;
+}
+
+/* auto slide */
+
+
+
+/* TIN TUC */
+
+.annoucement{
+    margin-top:10px;
+    text-align:left;
+    background:#0F0330 url("/GAMESTORE/img/background_2.png");
+    color:#fff;
+    width:100%;
+}
+
+.annoucement h1{
+    font-size:30px; 
+    margin:10px 0;
+}
+.annoucement h1::after{
+    content:"";
+    background-color:#fff;
+    height:5px;
+    width:100px;
+    display:block;
+    margin:0 auto;
+}
+
+
+.content2{
+    margin:auto;
+    width:70%;
+    font-size:16px;
+    padding:100px 0px;
+}
+
+.bantin{
+    margin:0 auto;
+}
+
+.bantin.flex{
+    text-align:left;
+}
+
+.annoucement .bantin .tintuc{
+    width:33%;
+    margin:10px;
+}
+
+
+
+.tintuc .noidung{
+    background-color:#323232;
+    padding:15px;
+}
+
+.tintuc .noidung .ngaydang{
+    color:#6B4AFF;
+}
+
+.tintuc .noidung .tieude{
+    text-transform:uppercase;
+    margin-top:10px;
+}
+
+.tintuc .noidung .tomtatnoidung{
+    font-size:14px;
+    margin-top:10px;
+}
+
+.tintuc .hinhanhtintuc{
+    overflow:hidden;
+    transition:transform 1s;
+}
+
+.hinhanhtintuc img{
+    width:100%;
+    
+}
+
+.hinhanhtintuc img:hover{
+    transform:scale(1.1);
+    transition:transform 2s;
+}
