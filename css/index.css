@@ -111,8 +111,12 @@ ul.menu{
 
 nav{
     background:linear-gradient(to left,rgb(123, 0, 255), blue,#0F0330);
+    transition:ease-in-out 0.5s;
 }
 
+nav.hide{
+    display:none;
+}
 
 ul.menu > li{
     min-width:120px;
@@ -131,7 +135,7 @@ ul.menu > li > a{
 
 
 ul.menu .subcontent {
-    background-color:lightblue;
+    background-color:black;
     position:absolute;
     display:none;
     min-width:200px;
@@ -147,10 +151,6 @@ ul.menu .sub:hover .subcontent{
    
 }
 
-ul.menu .sub:hover span.arrow {
-    -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
 
 ul.menu > li:hover{
     background-color:#01d6fe;
@@ -172,19 +172,29 @@ nav .subcontent > li{
 }
 
 
-.menu li.login{
-    margin:0 0 0 30%;
-    
-    padding:0;
-    line-height:0px;
+ul.menu > li.login{
+  margin-left:auto;
 }
 
+  .toggle-menu{
+    color:white;
+    font-size:25px;
+    border:1px solid white;
+    background-color:#999;
+    padding:10px;
+    z-index:999;
+    width:fit-content;
+    position:fixed;
+}
 
+  .toggle-menu .fa-solid.fa-bars{
+    color:red;
+    transition:linear 0.2s;
+}
 
-
-
-
-
+  .toggle-menu:hover .fa-solid.fa-bars {
+    color:blue;
+}
  
  
 
@@ -322,8 +332,8 @@ section {
 
 /*  slider */
 .slidershow{
-    width:var(--min-width);
-    margin:20px auto;
+    width:99.9%;
+    margin:0 auto;
 }
 
 .slidershow img{
@@ -347,7 +357,6 @@ section {
 .content .gamesell{
     width:var(--width-section);
     background-color:white; 
-    margin-left:1%;
     border-top:3px solid #FF8000;
 }
 
