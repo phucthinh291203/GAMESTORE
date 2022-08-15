@@ -8,7 +8,7 @@
   display:flex;
 }
 
-.hero{
+.main{
   background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url("/GAMESTORE/img/background.png");
   height:100%;
   width:100%;
@@ -25,6 +25,13 @@
   background-color:#fff;
   padding:5px;
   overflow:hidden;
+}
+
+.form-box img.logo{
+  position:fixed;
+  z-index:-1;
+  left:0;
+  top:10px;
 }
 
 .button-box{
@@ -50,7 +57,7 @@
   position:absolute;
   width:110px;
   height:100%;
-  background:linear-gradient(to right,#ff105f,#ffad06);
+  background:linear-gradient(to right,pink,#ffad06);
   border-radius:30px;
   transition:.5s;
 }
@@ -93,7 +100,7 @@
   cursor:pointer;
   display:block;
   margin:auto;
-  background:linear-gradient(to right,#ff105f,#ffad06);
+  background:linear-gradient(to right,pink,aqua);
   outline:none;
   border-radius:30px;
 }

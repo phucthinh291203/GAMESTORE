@@ -502,7 +502,7 @@ section {
    height:300px;
 }
 
-.gotopbutton{
+#gotopbutton{
     justify-content:space-between;
     position:fixed;
     background:yellowgreen;
