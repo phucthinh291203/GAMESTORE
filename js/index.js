@@ -1,5 +1,10 @@
 function init(){
 
+ function guiemail(){
+alert("Cảm ơn bạn đã gửi email, chúng tôi sẽ phản hồi sớm nhất");
+}
+
+
 var index =1;
 
  changeImage = function(){
@@ -73,6 +78,7 @@ toggle_menu.onclick = function(){
  nav.classList.toggle('hide');
  
 }
+
 
 
 }

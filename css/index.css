@@ -592,9 +592,13 @@ section {
 /* ket thuc thanh search */
 
 /* auto slide */
+
+.auto-slide{
+    margin-top:50px;
+}
 .slider{
-	height:400px;
-	margin:auto;
+    margin:auto;
+	
 	position:relative;
 	width:100%;       /* chinh thang nay */
 	display:grid;
@@ -623,7 +627,7 @@ section {
 }
 
 .slide{
-	height:400px;  /* <---- chinh thang nay ---> */
+	  /* <---- chinh thang nay ---> */
 	width:250px;
 	display:flex;
 	align-items:center;
@@ -634,7 +638,6 @@ section {
 .slider::before,.slider::after{
 	/* background:linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); */
 	content:"";
-	height:100%;
 	position:absolute;
 	width:90%;
 	z-index:2;
@@ -648,9 +651,11 @@ section {
 	top:0;
 	transform:rotatez(180deg);
 }
-img{
+.slider img{
 	transition:transform 1s;
 	width:100%;
+    height:100%;
+
 }
 
 img:hover{
@@ -702,10 +707,11 @@ img:hover{
 
 .bantin.flex{
     text-align:left;
+    
 }
 
 .annoucement .bantin .tintuc{
-    width:33%;
+    width:33.3%;
     margin:10px;
 }
 

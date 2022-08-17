@@ -7,23 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> 
+  <title>Tài khoản gamestore</title>
   
-  <title>Login</title>
 </head>
 <body>
   
   <div class="main">
     <div class="form-box">
-      <img class="logo" src="img/logogame2-removebg.png" alt="logo">
+      
       <div class="button-box">
         <div id="btn"></div>
         <button type="button" class="toggle" onclick="login()">Login</button>
         <button type="button" class="toggle" onclick="register()">Register</button>
       </div>
       <div class="social-icon">
-        <img src="img/Facebook.png" alt="">
-        <img src="img/Google.png" alt="">
-        <img src="img/Instagram.png" alt="">
+        <a href="https://www.facebook.com/" target="_blank"><img src="img/Facebook.png" alt=""></a>
+        <a href="https://www.google.com/intl/vi/gmail/about/" target="_blank"><img src="img/Google.png" alt=""></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="img/Instagram.png" alt=""></a>
     </div>
     <form id="login" class="input-group">
       <input type="text" class="input-field" placeholder="Tài khoản" required>
@@ -47,12 +47,16 @@
         <span onclick="showpassword2()" ><i class="fa-solid fa-eye"></i></span>
       </div>
       <input onclick="agree()" type="checkbox" class="check-box" > <span>Tôi đồng ý <a href="#">chính sách và điều khoản</a></span>
-      <button onclick="ThongBaoKhiAnDangKy();" class="submit-btn" id="register-btn"  >Đăng ký</button>
+      <button onclick="ThongBaoKhiAnDangKy();" class="submit-btn" id="register-btn"  >Tạo tài khoản</button>
     </form>
+    <a class="goback" href="index.html"><i class="fa-solid fa-circle-left"></i> Quay về</a>
     </div>
+    
   </div>
   <script src="js/login.js"></script>
-  <a class="goback" href="index.html"><i class="fa-solid fa-circle-left"></i> Quay về trang chủ</a>
-   
+
+  
+  
+  
 </body>
 </html>

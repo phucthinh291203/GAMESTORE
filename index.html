@@ -37,8 +37,8 @@
     <nav>
         
         <ul class="menu flex">
-                <li><a href="#">Trang chủ</a></li>
-                <li class="sub"> <a href="#">Sản phẩm <i class="ti-angle-down"></i></a>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li class="sub"> <a href="chitietsanpham.html">Sản phẩm <i class="ti-angle-down"></i></a>
                     <ul class="menu subcontent">
                         <li><a href="#">Game bản quyền</a></li>
                         <li><a href="#">Game miễn phí</a></li>
@@ -192,67 +192,65 @@
                                     </li>
                         </ul>  
                     </div>
-                
-
+                    
+                    
                     <div class="auto-slide">
+                        <h2>POSTER</h2>
                         <div class="slider">
+                            
                             <div class="slide-track">
                               <div class="slide">
-                                <img src="img/productgame_2.jpg" alt="">
+                                <img src="img/game1.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame_2.jpg" alt="">
+                                <img src="img/game2.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame_2.jpg" alt="">
+                                <img src="img/game3.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame_2.jpg" alt="">
+                                <img src="img/game4.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame_2.jpg" alt="">
+                                <img src="img/game5.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame_2.jpg" alt="">
+                                <img src="img/game6.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game7.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game8.jpg" alt="">
                               </div>
-                              <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
-                              </div>
+                              
                         
-                              <!-- same 9 slide (double) -->
+                              <!-- same 8 slide (double) -->
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game1.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game2.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game3.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game4.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game5.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game6.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game7.jpg" alt="">
                               </div>
                               <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
+                                <img src="img/game8.jpg" alt="">
                               </div>
-                              <div class="slide">
-                                <img src="img/productgame.jpg" alt="">
-                              </div>
+                              
                             </div>
                         
                           </div>
@@ -487,7 +485,7 @@
 
    <footer>
         <div class="size container flex2">
-            <div class="aboutus">
+            <div class="aboutus box">
                 <h2>Về chúng tôi</h2>
                 <p class="size">Gamestore - cửa hàng chuyên cung cấp game bản quyền xin kính chào các bạn.<br>Với mong muốn mang đến những tựa game lôi cuốn hấp dẫn nhất. <br>Tự hào là cửa hàng bán lẻ uy tín và chuyên nghiệp nhất hiện nay. <br>Luôn cam kết phục vụ quý khách chu đáo, tận tâm, hoàn thành công việc trong thời gian sớm nhất với mức chi phí hợp lý nhất <br>Để được tư vấn chi tiết quý khách có thể liên hệ 0215 105 0431 <br>Cảm ơn! </p>
                 <ul class="icons flex2">
@@ -498,7 +496,7 @@
                 </ul>
             </div>
 
-            <div class="links">
+            <div class="links box">
                 <h2>Đường dẫn</h2>
                 <ul class="link">
                     <li><a href="#">Trang chủ</a></li>
@@ -507,7 +505,7 @@
                 </ul>
             </div>
 
-            <div class="contacts">
+            <div class="contacts box">
                 <h2>Thông tin liên hệ</h2>
                 <ul class="contact">
                     <li><span class="flex2 address">
@@ -536,8 +534,12 @@
                     <li>
                         <form class="formemail">
                             <input class="email" type="email" placeholder="Đăng ký email">
-                            <button type="button">Gửi</button>
-
+                            <button onclick="guiemail()">Gửi</button>
+                            <script>
+                                function guiemail(){
+                                    alert("Cám ơn bạn đã gửi email, chúng tôi sẽ phản hồi lại cho bạn sớm nhất");
+                                }
+                            </script>
                         </form>
                     </li>
                 </ul>

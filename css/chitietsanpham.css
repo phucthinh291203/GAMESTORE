@@ -1,0 +1,664 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box !important;
+}
+
+.luuy{
+    color:red;
+}
+
+:root{
+    --dodai:100%;
+    --width:25%;
+    --min-width:90%;
+    --width-section:75%;
+}
+
+
+
+section{
+    margin:0 auto;
+}
+
+.mo-ta{
+    justify-content:center;
+    width:100%;
+    margin: 0 auto;
+    text-align: left;   
+    background-color: aliceblue;
+    margin-top:50px;
+    padding:15px;
+    
+    
+}
+.mo-ta {
+    list-style-type: none;
+    text-align:center;
+    
+}
+
+.mota{
+    list-style-type: none;
+}
+
+.mota li{
+    text-align:left;
+    padding-top:20px;
+}
+
+.mota li.anhgioithieu{
+    text-align:center !important;
+}
+
+#gia{
+    font-size: 30px;
+    color: rgb(81, 14, 2);
+    font-weight: bold;
+}
+.ll{
+    width: 1170px;
+    margin: 50px auto;
+    background-color: aliceblue;
+    border: #111 1px solid;
+    text-align: center;
+}
+
+.infor{
+    font-size:20px;
+}
+.infor .order{
+    font-size:20px;
+    padding:15px;
+    border:2px solid black;
+
+}
+
+
+
+h5{
+    font-size: medium;
+}
+
+.product{
+    display: inline;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+
+.product .infor div{
+    margin: 20px 20px;
+}
+
+.icon{
+    justify-content: center;
+}
+
+.icon .icon1{
+    width:20%;
+}
+
+.icon1{
+    margin-right: 12px;
+}
+.icon1 i{
+    color: #111;
+}
+.icon1 a{
+    color: #111;
+    text-decoration: none;
+}
+.product-item .buy{
+    margin: auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    background-color:#555 ;
+    padding: 10px 0px;
+    width: 45%;
+    text-align: center;
+    border: black 2px solid;
+    cursor: pointer;
+    color:white;
+   
+}
+.buy:hover{
+    background-color: black;
+    color: #ffff;
+}
+/* danh sach */
+#wrapper{
+    background-color: #999;
+
+}
+.end{
+    background-color: #999;
+    font-size:30px;
+}
+.headline{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.product-item {
+    display:none;
+    width: 25%;
+    padding-left: 15px ;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.products img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid;
+    border-radius: 5%;
+}
+.products .product-name{
+    text-decoration: none;
+    color: #111;
+}
+
+.products .product-top .buy{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    background-color: #446084;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+.buy:hover{
+    opacity: .8;
+}
+.btn {
+    padding: .7rem 2rem;
+    background: royalblue;
+    border: none;
+    color: #FFF;
+    margin: 20px auto;
+    display: block;
+    font-size: 1.3rem;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+} 
+
+.btn:hover {
+    opacity: .8;
+}
+
+
+/* Phan nay cua thinh */
+
+a{
+    text-decoration: none;
+}
+
+.center{
+    text-align:center;
+}
+
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+section{
+    text-align:center;
+}
+
+
+
+.product{
+    width:100%;
+    padding:20px;
+}
+
+.product > div{
+    width:50%;
+}
+
+.product #big-image{
+    width:50px;
+}
+
+.product img{
+    width:99%;
+}
+
+.product .thumb{
+    margin-top:30px;
+  
+}
+
+.product .thumb div{
+    width:24%;
+    margin-right:1%;
+    
+}
+
+.infor{
+    width:30%;
+    padding:20px;
+    text-align:center;
+    margin:auto;
+}
+
+.container{
+    width:var(--dodai);
+    margin:0 auto;
+    padding:20px;
+    justify-content: center;
+    border:2px solid blue;
+    background:pink;
+ }
+
+
+ /*slide xem them */
+ #panel{
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background:linear-gradient(#7800FF,#1500FF,black) ;
+    color: black;
+    font-weight:1px;
+    border: solid 1px #7800FF;
+    border-radius: 3px;
+    border:2px solid black;
+  }
+
+  #flip,#stop{
+    text-align:center;
+    width:80;
+    margin:20px auto;
+    cursor:pointer;
+    border: 5px solid black;
+    padding:2px;
+    border-radius: 30px;
+    
+  }
+   
+  #panel {
+    padding: 20px;
+    display: none;
+  }
+
+ /*ket thuc slide xem them */ 
+
+/* ket thuc phan cua thinh */
+
+
+/* header */
+
+header span{
+    color:#01d6fe;
+    font-weight: bold;
+    margin:auto 0;
+    font-style: italic;
+    align-items:center;
+}
+
+header{
+    background-image:url("/GAMESTORE/img/banner.png");
+    justify-content: space-around;
+    padding:5px;
+    align-items:center;
+    width:100%;
+}
+
+header .logo{
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+}
+
+
+header h2{
+    color:#E3454B;
+    font-style: italic;
+    text-decoration:line-through;
+    margin:0;
+}
+
+header .img{
+    overflow:hidden;
+    width:150px;
+}
+
+header img{
+    width:100%;
+    height:120px;
+    margin-top:-19px;
+}
+
+nav{
+    background:linear-gradient(to left,rgb(123, 0, 255), blue,#0F0330);
+    transition:ease-in-out 0.5s;
+}
+
+nav.hide{
+    display:none;
+}
+
+ul.menu{
+    list-style-type: none;
+    justify-content: center;
+    margin-left:4%;
+}
+
+ul.menu > li{
+    min-width:120px;
+    margin:0 1%;
+}
+
+ul.menu > li > a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding:15px;
+    font-size:16px;
+}
+
+
+ul.menu .subcontent {
+    background-color:black;
+    position:absolute;
+    display:none;
+    min-width:200px;
+    box-shadow:2px 2px #010101;
+    transition:0.5s;
+    z-index:100;
+    margin:0;
+}
+
+
+ul.menu .sub:hover .subcontent{
+   display:block;
+   
+}
+
+
+ul.menu > li:hover{
+    background-color:#01d6fe;
+    transition:0.5s ease;
+}
+ul.menu .subcontent > li:hover{
+    background-color:#01d6fe;
+}
+
+ul.menu > li:hover >a,
+ul.menu .subcontent > li:hover >a{
+    transition:0.5s ease;
+    color:#0000FF; 
+}
+
+nav .subcontent > li{
+    text-align:left;
+    padding:7px;
+}
+
+
+ul.menu > li.login{
+  margin-left:auto;
+}
+
+  .toggle-menu{
+    color:white;
+    font-size:25px;
+    border:1px solid white;
+    background-color:#999;
+    padding:10px;
+    z-index:999;
+    width:fit-content;
+    position:fixed;
+}
+
+  .toggle-menu .fa-solid.fa-bars{
+    color:red;
+    transition:linear 0.2s;
+}
+
+  .toggle-menu:hover .fa-solid.fa-bars {
+    color:blue;
+}
+
+/* end header */
+
+/* footer */
+footer{
+    background-color:#010101;
+    color:#999;
+    position:relative;
+    bottom:0;
+   width:100%;
+   height:auto;
+   padding:50px 100px;
+ }
+
+
+ footer ul{
+    list-style-type:none;
+ }
+
+ footer ul li{
+    padding:5px 0 ;
+ }
+
+ footer ul a{
+    text-decoration:none;
+    color:#999;
+ }
+
+footer .container2{
+    justify-content: space-between;
+    flex-wrap:wrap; 
+}
+
+footer i{
+    padding:0 15px 0 0;
+}
+
+.size{
+    font-size:17px;
+}
+
+
+
+
+
+
+.container2 > div{
+    width:var(--width);
+    padding:5px;
+}
+
+.container2 .aboutus{
+    width:45%;
+}
+
+.container2 h2 {
+    padding:10px 0;
+    position:relative;
+    color:#fff;
+}
+
+.container2 h2::after{
+    content:"";
+    height:2px;
+    width:50px;
+    background-color:#FF0000;
+    position:absolute;
+    display:block;
+}
+
+.aboutus ul{
+    margin-top:20px;
+}
+
+.aboutus .icons li{
+    margin-right:10px;
+    border-radius:4px;
+    background-color:#222;
+    width:40px;
+    height:40px;
+    padding-top:0;
+}
+
+.aboutus .icons .fa{
+    font-size:20px;
+    color:#fff;
+}
+
+.icons li  i{
+     display: flex;
+     width:55px;
+    height:40px;
+    justify-content: center;
+    align-items:center;
+}
+
+.icons li:hover {
+    background-color:#FF0000;
+}
+
+.formemail input.email{
+    height:40px;
+    width:240px;
+    font-size:18px;
+    padding:3px;
+}
+
+.formemail button{
+    font-size:20px;
+    padding:5px 20px;
+    margin-top:10px;
+    background-color:#222;
+    color:white;
+    border-radius:4px;
+    border:#FF0000;
+}
+
+.formemail button:hover{
+    background-color:#FF0000;
+    border:#FF0000;
+}
+
+section {
+    margin-top:100px;
+}
+
+.link >li > a:hover{
+    color:#fff;
+}
+
+.contact i{
+    font-size:20px;
+    color:#fff;
+}
+
+.flex {
+    display:flex;
+    text-align:center;
+}
+
+.flex2{
+    display:flex;
+    text-align:left;
+}
+
+.align-center{
+    align-items:center;
+}
+
+/* end footer */
+
+
+/* thanh search */
+#search-box{
+    background-color:#fff;
+    border-radius:30px;
+    line-height:0;
+    padding:15px;
+    margin:0 0 0 280px;
+}
+
+#search-box #search-text{
+   position:relative;
+    border:none;
+    outline:none;
+    background:none;
+    padding:10px 15px;
+    font-size:18px;
+    width:0;
+    padding:0;
+    transition:all 0.25s ease-in-out;
+} 
+
+#search-box:hover #search-text{
+    width:300px;
+    padding:5px 15px;
+    border:none;
+    
+}
+
+
+#search-box #search-btn{
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+    padding:15px;
+    border-radius:50%;
+    padding:10px 10px;
+    right:0;
+} 
+
+/* ket thuc thanh search */
+
+.DatHang{
+    margin:0;
+    position:fixed;
+    width: 70%;
+    height:80%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:white;
+    opacity: 0.8;
+    background-position: center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    display:none;
+}
+
+.DatHang p{
+    font-size:50px;
+    color:red;
+    cursor:pointer;
+    text-align:right;
+    padding:15px;
+
+}
+
+.DatHang .img{
+    width:100px;
+}
+
+.DatHang img{
+    width:100%;
+}

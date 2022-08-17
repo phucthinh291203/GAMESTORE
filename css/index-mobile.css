@@ -1,10 +1,18 @@
 @media screen and (max-width:1500px){
-   
+    
 }
 
 
 @media screen and (max-width:950px){
+    
 
+    ul.menu > li > a{
+        padding:5px;
+    }
+
+    ul.menu .subcontent{
+        min-width:100px;
+    }
     .content{
         width:100%;
 
@@ -19,7 +27,8 @@
     }
      
     .product{
-        width:49%
+        width:49%;
+        margin:0 auto;
     }
     
     #search-box{
@@ -39,6 +48,8 @@
     }
     ul.menu .subcontent>li{
         text-align:center;
+        padding:5px;
+        margin:0;
     }
 
 
@@ -46,6 +57,20 @@
        
         margin:0 1%;
     }
+
+    .annoucement .bantin{
+        flex-wrap:wrap;
+    }
+
+    .annoucement .bantin .tintuc{
+        width:46%;
+    }
+
+    .annoucement .bantin .tintuc:last-child{
+        margin:0 auto;
+    }
+
+   
 }
 
 @media screen and (max-width:700px){
@@ -65,14 +90,41 @@
     }
      
     .product{
-        width:99%
+        width:100%;
     }
+
+   
     
     #search-box{
         display:none;
     }
+
+    .annoucement .bantin .tintuc{
+        width:100%;
+    }
+    footer .container .box{
+        width:100%;
+    }
 }
 
 
+@media screen and (orientation:landscape) and (max-width:950px){
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        font-size:15px;
+    }
 
+    aside {
+        display:none;
+    }
+
+    .content .gamesell .product{
+        width:25%;
+    }
+
+    nav > ul.menu{
+       
+        text-align:center;
+    }
+}
 

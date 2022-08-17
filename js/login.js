@@ -1,4 +1,5 @@
-   
+
+
       var x= document.getElementById("login");
       var y=document.getElementById("register");
       var z=document.getElementById("btn");
@@ -72,3 +73,4 @@ function ThongBaoKhiAnDangNhap() {
 function ThongBaoKhiAnDangKy() {
   alert("Đăng ký thành công");
 }
+
