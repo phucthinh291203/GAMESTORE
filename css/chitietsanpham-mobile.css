@@ -1,0 +1,37 @@
+@media screen and (max-width:1500px) {
+    body{
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width:950px) {
+    body{
+        background-color: green;
+    }
+
+    .flex{
+        justify-content: center;
+    }
+
+    .product{
+        flex-wrap:wrap;
+        padding:0;
+    }
+
+    .container{
+        padding:0;
+    }
+
+    .product > div{
+        width:100%;
+      }
+
+}
+
+@media screen and (max-width:700px) {
+    body{
+        background-color: yellow;
+    }
+
+    
+}

@@ -26,7 +26,7 @@ $(document).ready(function(){
    $("#gotopbutton").hide()
 
    $(window).scroll(function(){
-        if($(this).scrollTop() >= 50){
+        if($(this).scrollTop() >= 100){
                 $("nav").css({
                         "position":"fixed",
                         "left":0,

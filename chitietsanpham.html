@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/chitietsanpham.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/chitietsanpham-mobile.css">
 </head>
 
 <body onload="init();">
@@ -51,7 +52,9 @@
    </div>
    
     <!-------------- header -------------->
-    <div class="container flex">
+    <div class="sanpham flex">
+
+    <div class="container">
         <div class="product">
             <div>
                 <img src="img/maxresdefault_1.jpg" id="main">
@@ -63,11 +66,11 @@
             </div>
     </div>       
 
-        <div class="infor">
+    <div class="infor">
                 <h2> Grand Theft Auto V - GTA V</h2>
                 <p><i class="fa-solid fa-tags"> </i> Thể loại: <a href="">Action, Adventure, GTA, GTA5, GTA V, GTA 5</a></p>
                 <div id="gia"> 456.000<sup>đ</sup></div>
-                 <p class="order" href=""><i class="fa-solid fa-bag-shopping"></i>Đặt hàng</p>
+                 <p class="order" href=""><i class="fa-solid fa-bag-shopping"></i> Đặt hàng</p>
   
                 <div class="icon flex">
                     <div class="icon1"><a href="" target="_blank"><i class="fa-solid fa-phone"></i></a><a href=""
@@ -78,12 +81,12 @@
                     <div class="icon1"><a href="mailto: chienle05122003@gmail.com" target="_blank"><i
                                 class="fa-solid fa-envelope"></i></a><a href="mailto: chienle05122003@gmail.com"
                             target="_blank">Mail</a></div>
-                </div>
+                    </div>
             </div>
             
      </div>  
-     </div>    
-     
+ </div>    
+</div>
  <br>    
     <!-- mô tả -->
 <h2 class="center">Chi tiết sản phẩm</h2>
@@ -99,7 +102,7 @@
                 Tháng 9 năm 2013 cho phiên bản Xbox 360 và PlayStation 3. Trò chơi cũng đã được phát hành cho phiên bản
                 Xbox One và PlayStation 4 vào ngày 18 tháng 11 năm 2014, sau đó phát hành cho PC vào ngày 14 tháng 4 năm
                 2015.</li>
-            <li class="anhgioithieu"><img src="img/game1.1.jpg" alt="" width="960px"></li>
+            <li><div class="anhgioithieu"><img src="img/game1.1.jpg" alt=""></div></li>
             <li>Trò chơi nằm trong mạch truyện chính của series Grand Theft Auto, mạch truyện này được tính là từ khi
                 bắt đầu nội dung của trò chơi Grand Theft Auto IV (2008), không liên hệ nội dung đến các phần trước
                 Grand Theft Auto IV. Nằm trong tiểu bang hư cấu San Andreas, mô phỏng Nam California, câu chuyện nói về
@@ -107,7 +110,7 @@
                 chống lại chính phủ và các thế lực khác. Trò chơi được thiết kế theo kiểu thế giới mở cho phép người
                 chơi tự do đi khắp nơi, các vùng nông thôn, rừng núi, hoang mạc và thành phố hư cấu Los Santos, mô phỏng
                 thành phố Los Angeles ngoài đời.</li>
-            <li class="anhgioithieu"><img src="img/game1.2.jpg" alt="" width="960px"></li>
+            <li><div class="anhgioithieu"><img src="img/game1.2.jpg" alt=""></div></li>
             <li>Trò chơi được phát triển ngay sau khi phát hành Grand Theft Auto IV và được thực hiện giữa nhiều studio
                 của Rockstar Games trên toàn thế giới. Nhóm phát triển đã dựa nhiều yếu tố trong cơ chế trò chơi từ các
                 trò chơi trước đó của họ như Red Dead Redemption và Max Payne 3, và thiết kế trò chơi xung quanh ba nhân
@@ -377,12 +380,30 @@
        </footer>
 
        <section class="DatHang">
-            <p class="turnoff">X</p>
-           <h1>Đặt hàng thành công</h1>
-            <b>Cảm ơn bạn mua hàng của chúng tôi, key game sẽ được gửi vào email mà tài khoản của bạn đã đăng ký</b>
-            <div class="img"><img src="img/check-circle.png" alt=""></div>
+            <span class="turnoff">X</span>
+            <h1>Điền thông tin</h1>
+            <form class="dienthongtin">
+               <label for="hoten">Nhập họ tên: </label><input class="hoten" type="text" require></span> <br><br>
+               <label for="email">Nhập email: </label><input class="email" type="email" require></span> <br><br>
+               <label for="sdt">Nhập số điện thoại: </label><input class="email" type="text" require></span> <br><br>
+               <label for="address">Nhập địa chỉ: </label><input class="email" type="text" require></span> <br><br>
+               <input type="radio" name="luachon" id="ship-key-game"> Ship đĩa game đến nhà <br><br>
+               <input type="radio" name="luachon" id="gui-qua-email"> Ship key game qua email <br><br>
+                <input type="button" class="thuc-hien-thanh-toan" value="Đặt hàng">
+            </form>
+        </section>
 
-       </section>
+        <section class="DatHang-thanhcong">
+            <span class="turnoff">X</span>
+           <h1 class="big">Đặt hàng thành công</h1>
+            <b>Cảm ơn bạn mua hàng của chúng tôi, chúng tôi sẽ sớm liên hệ với bạn để xác thực</b> <br>
+            <b>Nếu bạn mua game qua email, key game sẽ được gửi vào email </b>
+
+            <h1 class="big">Thank you</h1>
+            <a href="#" class="continue-buy">Tiếp tục mua hàng</a>
+        </section>
+       
+        <a href="javascript:;" id="gotopbutton"><i class="fa-solid fa-circle-arrow-up"></i></a>
 </body>
 
 </html>
