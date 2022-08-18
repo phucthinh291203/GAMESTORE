@@ -1,14 +1,9 @@
 @media screen and (max-width:1500px) {
-    body{
-        background-color: blue;
-    }
+    
 }
 
 @media screen and (max-width:950px) {
-    body{
-        background-color: green;
-    }
-
+    
     .flex{
         justify-content: center;
     }
@@ -26,12 +21,64 @@
         width:100%;
       }
 
+    .product-item{
+        width:50%;
+    }
+
+    footer .container2 .box{
+        width:100%;
+    }
+
 }
 
 @media screen and (max-width:700px) {
-    body{
-        background-color: yellow;
+  
+
+    .product-item{
+        width:100%;
     }
 
-    
+    ul.menu > li > a{
+        padding:5px;
+    }
+
+    ul.menu .subcontent{
+        min-width:100px;
+    }
+
+    nav > ul.menu{
+        flex-direction:column;
+        margin-left:0;
+        text-align:center;
+    }
+
+
+    ul.menu .subcontent{
+        min-width:100%;
+        margin:0 auto;
+    }
+    ul.menu .subcontent>li{
+        text-align:center;
+        padding:5px;
+        margin:0;
+    }
+
+
+    ul.menu > li.login{
+        margin:0 1%;
+    }
+
+    .DatHang .dienthongtin{
+        font-size:11px;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-height:600px){
+    .DatHang ,.DatHang-thanhcong{
+        top:-30%;
+        height:100%;
+    }
+    .DatHang .dienthongtin{
+        font-size:11px;
+    }
 }

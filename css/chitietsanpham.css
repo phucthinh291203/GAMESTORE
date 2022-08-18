@@ -663,6 +663,7 @@ section {
     opacity: 1;
     overflow:hidden;
     display:none;
+    z-index:999;
 }
 
 .DatHang .turnoff,.DatHang-thanhcong .turnoff{
@@ -680,11 +681,11 @@ section {
     justify-content: center;
     text-align: left;
     font-size:25px;
-    padding:50px;
+    padding:10px;
 }
 
 .dienthongtin input[type="text"],.dienthongtin input[type="email"]{
-   width:300px;
+   width:50%;
    height:25px;
 }
 
