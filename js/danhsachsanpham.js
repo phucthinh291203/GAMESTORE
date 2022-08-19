@@ -8,7 +8,30 @@ function init(){
          index =0;
 }       
 setInterval(changeImage,3000);
- 
+
+let k = document.getElementById("keyword");
+k.addEventListener("change",function(){
+//XOA CLASS SEARCH
+let subjects = document.querySelectorAll("#all .product-item .product-name");
+for(let c of subjects)
+c.classList.remove("search");
+
+//THEM CLASS SEARCH
+if(this.value !=""){
+  for(let s of subjects){
+    let t=s.innerText.toLowerCase();
+    if(t.indexOf(this.value.toLowerCase())>=0){
+        s.parentElement.classList.remove("search");
+       setTimeout(function(){
+ s.parentElement.classList.add("search");
+},100) 
+    }
+  }
+}});
+
+
+
+        
 $(document).ready(function(){
     $("#chienthuat .products .product-item").slice(0,4).show();
     $(".btn.chienthuat").on("click",function(){
@@ -66,6 +89,36 @@ $(document).ready(function(){
             $(".btn.gameonline").fadeOut('slow');
             $(".end.gameonline").append("<b> Đã hết sản phẩm</b>");}
         else  $("#gameonline .products .product-item:hidden").slice(0,4).show(1000);
+            
+        }
+    )
+
+    $("#playstation .products .product-item").slice(0,4).show();
+    $(".btn.playstation").on("click",function(){
+        if ($("#playstation .products .product-item:hidden").length == 0) {
+            $(".btn.playstation").fadeOut('slow');
+            $(".end.playstation").append("<b> Đã hết sản phẩm</b>");}
+        else  $("#playstation .products .product-item:hidden").slice(0,4).show(1000);
+            
+        }
+    )
+
+    $("#x-box .products .product-item").slice(0,4).show();
+    $(".btn.x-box").on("click",function(){
+        if ($("#x-box .products .product-item:hidden").length == 0) {
+            $(".btn.x-box").fadeOut('slow');
+            $(".end.x-box").append("<b> Đã hết sản phẩm</b>");}
+        else  $("#x-box .products .product-item:hidden").slice(0,4).show(1000);
+            
+        }
+    )
+
+    $("#all .products .product-item").slice(0,4).show();
+    $(".btn.all").on("click",function(){
+        if ($("#all .products .product-item:hidden").length == 0) {
+            $(".btn.all").fadeOut('slow');
+            $(".end.all").append("<b> Đã hết sản phẩm</b>");}
+        else  $("#all .products .product-item:hidden").slice(0,4).show(1000);
             
         }
     )

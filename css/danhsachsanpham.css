@@ -189,3 +189,30 @@ section .products img{
   color:white;
 
 }
+
+hr{
+  width:90%;
+  margin:0 auto;
+  color:pink;
+  height:4px;
+}
+
+.search{
+  outline: 3px solid transparent;
+  animation: doivien 1s 5;
+}
+
+@keyframes doivien{
+  from {
+      outline-color:transparent;
+  }
+
+  to {
+      outline-color:red;
+  }
+}
+
+#keyword{
+  width:20%;
+  height:30px;
+}

@@ -24,7 +24,9 @@
     display:flex;
     text-align:left;
 }
-
+.flex3{
+    flex-wrap: wrap;
+}
 .align-center{
     align-items:center;
 }
@@ -67,7 +69,7 @@ header span{
 }
 
 header{
-    background-image:url("/GAMESTORE/img/banner.png");
+    background-image:url("/img/banner.png");
     justify-content: space-around;
     padding:5px;
     align-items:center;
@@ -181,14 +183,14 @@ ul.menu > li.login{
     font-size:25px;
     border:1px solid white;
     background-color:#999;
-    top:0;
-    left:0;
     padding:10px;
     z-index:999;
     width:fit-content;
     position:fixed;
 }
-
+#aa{
+    color:black ;
+}
   .toggle-menu .fa-solid.fa-bars{
     color:red;
     transition:linear 0.2s;
@@ -354,16 +356,17 @@ section {
     width:calc((100% - var(--width-section)) - 1%);
     background-color:white; 
     margin-right:1%;
+    height: 100%;
 }
 
 .content .gamesell{
     width:var(--width-section);
     background-color:white; 
-    border-top:3px solid #FF8000;
+    border-top:3px solid #7B68EE;
 }
 
 .content aside h3{
-    background-color:#FF8000;
+    background-color:#c7c4dc;
     padding:15px;
 }
 
@@ -372,7 +375,7 @@ section {
 }
 
 .content b{
-    color:orange;
+    color: #010101;
     font-size:20px;
     text-decoration: none;
     padding:5px;
@@ -392,8 +395,13 @@ section {
     font-size: 1.5rem;
 }
 
+.staff2{
+    padding:0 15px;
+    color: #746821;
+}
 .staff{
     padding:0 15px;
+    color: #823232;
 }
 
 .game{
@@ -403,15 +411,17 @@ section {
 
 .game img{
     width:100%;
-    
 }
 
 
 
+#aaaa{
+    color: red;
+}
 .content .gamesell h3{
-    color:#FF8000;
+    color:black;
     padding:15px;
-    border-top:2px solid #FF8000;
+    border-top:2px solid #7B68EE;
 }
 
  
@@ -423,7 +433,7 @@ section {
 .product {
     width:24%;
     text-align:center;
-    border:2px solid black;
+
     margin:4px;
     margin-bottom:1.5rem;
 }
@@ -461,7 +471,16 @@ section {
     animation:effect 0.5s infinite;
     box-sizing:border-box;
 }
-
+.promo2{
+    position:absolute;
+    padding:5px 5px;
+    color:yellow;
+    background-color:red;
+    right:0;
+    top:0;
+    font-weight:bold;
+    box-sizing:border-box;
+}
 .product img:hover
 {
     transform:scale(1.1);
@@ -471,7 +490,7 @@ section {
     padding:5px;
     font-size:17px;
     border:2px solid #222;
-    background-color:orange;
+    background-color:#555;
     box-sizing:border-box;
     margin-top:5px;
     color:black;
@@ -484,10 +503,17 @@ section {
 
 .sale {
     text-decoration:line-through !important;
-    color:#999 !important;
+    color:rgb(248, 4, 4) !important;
     font-size:13px !important;
 }
-
+.salee{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
 .readmore > div{
     margin:20px auto;
     text-align:center;
@@ -508,9 +534,9 @@ section {
 
 .bannergame img{
    width:100%;
-   object-fit:cover;
+
    padding:10px;
-   height:300px;
+   height:392px;
 }
 
 #gotopbutton{
@@ -533,6 +559,8 @@ section {
 
 .listNew > li{
     width:100%;
+    margin-top: 30px;
+    border: whitesmoke 1px solid;
 }
 
 .news .image{
@@ -596,17 +624,19 @@ section {
 /* auto slide */
 
 .auto-slide{
-    margin-top:50px;
+    margin-top:10px;
+    height: 200px;
+}
+.auto-slide h2{
+    margin-left: 15px;
 }
 .slider{
     margin:auto;
-	
 	position:relative;
 	width:100%;       /* chinh thang nay */
 	display:grid;
 	place-items:center;
 	overflow:hidden;
-
 }
 
 @keyframes scroll{
@@ -629,7 +659,7 @@ section {
 }
 
 .slide{
-	  /* <---- chinh thang nay ---> */
+	 
 	width:250px;
 	display:flex;
 	align-items:center;
@@ -665,7 +695,7 @@ img:hover{
 }
 
 .auto-slide{
-	height:400px;
+height: 200px;
 }
 
 /* auto slide */
@@ -677,7 +707,7 @@ img:hover{
 .annoucement{
     margin-top:10px;
     text-align:left;
-    background:#0F0330 url("/GAMESTORE/img/background_2.png");
+    background:#0F0330 url("/img/background_2.png");
     color:#fff;
     width:100%;
 }
@@ -722,6 +752,7 @@ img:hover{
 .tintuc .noidung{
     background-color:#323232;
     padding:15px;
+    height: 60%;
 }
 
 .tintuc .noidung .ngaydang{
@@ -731,6 +762,7 @@ img:hover{
 .tintuc .noidung .tieude{
     text-transform:uppercase;
     margin-top:10px;
+    color: #c8c8d2;
 }
 
 .tintuc .noidung .tomtatnoidung{
