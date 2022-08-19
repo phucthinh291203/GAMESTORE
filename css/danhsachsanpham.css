@@ -1,0 +1,191 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.container{
+    width:90%;
+    margin:0 auto;
+    color:blue;
+}
+
+.container > div{
+    width:25%;
+   padding:15px;
+   margin-top:5px;
+   border-radius:5px;
+   box-shadow:  1px; 
+}
+
+.container img{
+    width:100%;
+    height:-webkit-fill-available;
+}
+
+.container > div.slidershow{
+    width:50%;
+    
+}
+
+ul.danhmuc{
+    list-style-type: none;
+    font-size:20px;
+    text-align:left;
+    text-decoration: none;
+}
+
+ul.danhmuc > li{
+    margin:5px;
+    padding:5px;
+}
+
+ul.danhmuc > li > a{
+    text-decoration:none;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+    width:90%;
+    margin:20px auto;
+   padding:15px;
+   box-shadow:0 10px 20px;
+}
+
+section .products img{
+  height:auto;
+  width:100%;
+}
+
+.products .product-item{
+    width:25%;
+    padding:15px;
+    display:none;
+}
+
+.products img{
+    width:100%;
+}
+
+.products .product-top .buy{
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  background-color: #446084;
+  padding: 10px 0px;
+  text-align: center;
+
+}
+.buy:hover{
+  opacity: .8;
+}
+
+.btn {
+  padding: .7rem 2rem;
+  background: royalblue;
+  border: none;
+  color: #FFF;
+  margin: 20px auto;
+  display: block;
+  font-size: 1.3rem;
+  cursor: pointer;
+  outline: none;
+  transition: .3s;
+} 
+
+.btn:hover {
+  opacity: .8;
+}
+
+.end{
+  background-color: transparent;
+  font-size:30px;
+  text-align:center;
+}
+
+#gameonline{
+  background:url(/img/background_3.png) #000000;
+  color:#fff;
+  background-repeat: no-repeat;
+}
+
+#gameonline .headline{
+  border:2px solid white;
+  border-radius:30px;
+  width:fit-content;
+  padding:15px;
+  align-items: center;
+}
+
+.headline p{
+  padding:0 10px;
+}
+
+#gameonline .btn {
+  background-color:#000000;
+  border:2px solid white;
+  color:orange;
+  border-radius:20px;
+  text-shadow:#999 1px 2px;
+}
+
+#gameonline .end{
+  background-color:transparent;
+  color:white;
+
+}
