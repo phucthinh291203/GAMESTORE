@@ -9,7 +9,7 @@
 }
 
 .main{
-  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url("/img/background.png");
+  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url("/GAMESTORE/img/background.png");
   width:100%;
   height:100%;
   position:absolute;
@@ -149,7 +149,6 @@ span{
   color: white;
     position: fixed;
     top:0;
-    
     padding: 15px;
     font-size: 20px;
     text-decoration: none;

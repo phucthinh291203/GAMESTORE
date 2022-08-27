@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/danhsachsanpham.css">
     <link rel="stylesheet" href="css/danhsachsanpham-mobile.css">
     <script src="js/danhsachsanpham.js"></script>
-    <title>Document</title>
+    <title>Danh mục sản phẩm</title>
+    <link rel="shortcut icon" href="img/logogame2.png">
 </head>
 <body onload="init();">
 
@@ -298,7 +299,7 @@
                 <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
                 <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
                 
-                <a href="chitietsanpham.html class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
@@ -682,7 +683,7 @@
     document.getElementById(firstshow).style.display = "block";
     
 
-    function openGame(evt, gameName) {   
+    function openGame(cainut, gameName) {   
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -693,7 +694,7 @@
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(gameName).style.display = "block";
-    evt.currentTarget.className += " active";
+    cainut.currentTarget.className += " active";
   }
 
 </script>

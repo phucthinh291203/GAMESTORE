@@ -74,7 +74,7 @@ header span{
 }
 
 header{
-    background-image:url("/img/banner.png");
+    background-image:url("/GAMESTORE/img/banner.png");
     justify-content: space-around;
     padding:5px;
     align-items:center;
@@ -639,9 +639,9 @@ section {
 .slider{
     margin:auto;
 	position:relative;
-	width:100%;       /* chinh thang nay */
-	display:grid;
-	place-items:center;
+	width:100%;      
+	display:flex;
+	align-items:center;
 	overflow:hidden;
 }
 
@@ -665,7 +665,6 @@ section {
 }
 
 .slide{
-	 
 	width:250px;
 	display:flex;
 	align-items:center;
@@ -673,22 +672,7 @@ section {
 	perspective: 100px;
 }
 
-.slider::before,.slider::after{
-	/* background:linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); */
-	content:"";
-	position:absolute;
-	width:90%;
-	z-index:2;
-}
-.slider::before{
-	left:0;
-	top:0;
-}
-.slider::after{
-	right:0;
-	top:0;
-	transform:rotatez(180deg);
-}
+
 .slider img{
 	transition:transform 1s;
 	width:100%;
@@ -698,10 +682,6 @@ section {
 
 img:hover{
 	transform:translateZ(20px);
-}
-
-.auto-slide{
-height: 200px;
 }
 
 /* auto slide */
