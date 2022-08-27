@@ -44,10 +44,15 @@
 .list,.list > li > a{
     list-style-type:none;
     text-decoration: none;
-
+    
 }
 .list > li{
     padding:10px 10px;
+    font-size:20px
+}
+
+.list > li > a{
+    color:black;
 }
 body{
     min-height:100vh;
@@ -116,7 +121,7 @@ nav{
     transition:ease-in-out 0.5s;
 }
 
-nav.hide{
+.hide{
     display:none;
 }
 
@@ -182,25 +187,25 @@ ul.menu > li.login{
     color:white;
     font-size:25px;
     border:1px solid white;
-    background-color:#999;
+    background-color:yellow;
     padding:10px;
     z-index:999;
     width:fit-content;
     position:fixed;
 }
-#aa{
-    color:black ;
-}
-  .toggle-menu .fa-solid.fa-bars{
+
+nav .toggle-menu .fa-solid.fa-bars{
     color:red;
     transition:linear 0.2s;
 }
 
-  .toggle-menu:hover .fa-solid.fa-bars {
+nav .toggle-menu:hover .fa-solid.fa-bars {
     color:blue;
 }
  
- 
+ .section{
+    margin:0 auto;
+ }
 
 
 
@@ -366,7 +371,8 @@ section {
 }
 
 .content aside h3{
-    background-color:#c7c4dc;
+    background-color:#0A00FF;
+    color:white;
     padding:15px;
 }
 
@@ -783,4 +789,9 @@ height: 200px;
 .hinhanhtintuc img:hover{
     transform:scale(1.1);
     transition:transform 2s;
+}
+
+
+.show{
+    display:block;
 }

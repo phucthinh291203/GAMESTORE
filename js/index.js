@@ -1,10 +1,5 @@
 function init(){
 
- function guiemail(){
-alert("Cảm ơn bạn đã gửi email, chúng tôi sẽ phản hồi sớm nhất");
-}
-
-
 var index =1;
 
  changeImage = function(){
@@ -18,9 +13,7 @@ var index =1;
  setInterval(changeImage,3000);
 
 
-function TaoThanhSearch(){
-        document.getElementsByClassName('search-form').style.scaleY = 1;
-}
+
 
 $(document).ready(function(){
    $("#gotopbutton").hide()
@@ -48,6 +41,7 @@ $(document).ready(function(){
 
                 $(".toggle-menu").css({
                         "position":"fixed",
+                        
                 })
                         
         }
@@ -68,15 +62,17 @@ $(document).ready(function(){
                 scrollTop:0
         },500);
    })
+
+   
 })
 
 
-const nav=document.querySelector('nav');
+const nav=document.querySelector('.menu');
 const toggle_menu=document.querySelector('.toggle-menu');
 
 toggle_menu.onclick = function(){
  nav.classList.toggle('hide');
- 
+ toggle_menu.classList.toggle('show');
 }
 
 

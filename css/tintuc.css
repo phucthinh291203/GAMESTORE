@@ -1,0 +1,97 @@
+.wrapper{
+    background-image:url(https://wallpapercave.com/dwp1x/wp2694513.jpg) ;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.tieudetintuc{
+    font-size: 30px;
+    border: 2px blue solid;
+    margin: 15px 15px;
+    padding: 10px;
+    display: inline-block;
+    color: rgb(236, 236, 249);
+    background-color:rgb(69, 69, 234);
+}
+.chitiettt{
+    display: block;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto ;
+    background-color: rgba(252, 247, 240, 0.508);
+}
+#tentt{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: rgb(13, 14, 14);
+    font-family:"Merriweather",serif ;
+    font-weight: 10px;
+    text-align: justify;
+}
+.tttb{
+    list-style: none;
+    padding: 30px;
+}
+.newsmore{
+    width: 95%;
+    background-color:rgba(240, 248, 255, 0.473);
+    margin: 20px 50px auto auto;
+}
+.tttb li{
+    margin-top: 15px;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.list div{
+    width: 25%;
+    padding: 10px 5px;
+}
+img{
+    width: -webkit-fill-available;
+}
+
+
+#tintuclq{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.lnew p{
+    position: absolute;
+    bottom: 5%;
+    font-size: 18px;
+    text-align: justify;
+    background-color: rgba(198, 194, 188, 0.534);
+    display: block;
+}
+
+.lnew{
+    position: relative;
+}
+.lnew p a{
+    text-decoration: none;
+    color:rgb(53, 56, 58) ;
+}
+
+section{
+    margin:0 auto;
+}
+
+/* reponsive */
+
+/* @media only screen and (max-width: 739px) {
+    
+}
+
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    
+} */
+

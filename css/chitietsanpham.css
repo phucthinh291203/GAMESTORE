@@ -5,6 +5,17 @@
     box-sizing:border-box !important;
 }
 
+.show{
+    display:block;
+}
+.hide{
+    display:none !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 .luuy{
     color:red;
 }
@@ -81,7 +92,8 @@ section{
     padding:15px;
     border:2px solid black;
     cursor:pointer;
-
+    background-color:red;
+    color:yellow;
 }
 
 
@@ -126,13 +138,13 @@ h5{
     text-transform: uppercase;
     text-decoration: none;
     display: block;
-    background-color:#555 ;
+    background-color:red ;
     padding: 10px 0px;
     width: 45%;
     text-align: center;
     border: black 2px solid;
     cursor: pointer;
-    color:white;
+    color:yellow;
    
 }
 .buy:hover{
@@ -141,7 +153,7 @@ h5{
 }
 /* danh sach */
 #wrapper{
-    background-color: #999;
+    background-color: white;
 
 }
 .end{
@@ -218,6 +230,7 @@ a{
 
 .center{
     text-align:center;
+    color:white;
 }
 
 
@@ -268,8 +281,7 @@ section{
     margin:0 auto;
     padding:20px;
     justify-content: center;
-    border:2px solid blue;
-    background:pink;
+    background:whitesmoke;
  }
 
 
@@ -318,7 +330,7 @@ header span{
 }
 
 header{
-    background-image:url("/GAMESTORE/img/banner.png");
+    background-image:url("/img/banner.png");
     justify-content: space-around;
     padding:5px;
     align-items:center;
@@ -350,19 +362,19 @@ header img{
     margin-top:-19px;
 }
 
-nav{
-    background:linear-gradient(to left,rgb(123, 0, 255), blue,#0F0330);
-    transition:ease-in-out 0.5s;
-}
 
-nav.hide{
-    display:none;
-}
+
+
 
 ul.menu{
     list-style-type: none;
-    justify-content: center;
+    justify-content: flex-start;
     margin-left:4%;
+}
+
+nav{
+    background:linear-gradient(to left,rgb(123, 0, 255), blue,#0F0330);
+    transition:ease-in-out 0.5s;
 }
 
 ul.menu > li{
@@ -432,18 +444,17 @@ ul.menu > li.login{
     z-index:999;
     width:fit-content;
     position:fixed;
-    top:0;
-    left:0;
 }
 
-  .toggle-menu .fa-solid.fa-bars{
+nav .toggle-menu .fa-solid.fa-bars{
     color:red;
     transition:linear 0.2s;
 }
 
-  .toggle-menu:hover .fa-solid.fa-bars {
+nav .toggle-menu:hover .fa-solid.fa-bars {
     color:blue;
 }
+ 
 
 /* end header */
 
@@ -664,11 +675,12 @@ section {
     overflow:hidden;
     display:none;
     z-index:999;
+    text-transform: uppercase;
 }
 
 .DatHang .turnoff,.DatHang-thanhcong .turnoff{
     font-size:50px;
-    color:red;
+    color:black;
     cursor:pointer;
     padding:15px;
     margin-right:-90%;
@@ -692,7 +704,7 @@ section {
 .thuc-hien-thanh-toan{
     margin:0 auto;
     padding:15px;
-
+    font-size:20px;
 }
 
 .DatHang-thanhcong{

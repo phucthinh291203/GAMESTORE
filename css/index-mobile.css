@@ -15,7 +15,7 @@
     }
     .content{
         width:100%;
-
+        margin:0 auto;
     }
 
     .content .gamesell{
@@ -66,9 +66,6 @@
         width:46%;
     }
 
-    .annoucement .bantin .tintuc:last-child{
-        margin:0 auto;
-    }
 
    
 }
@@ -102,13 +99,13 @@
     .annoucement .bantin .tintuc{
         width:100%;
     }
-    footer .container2 .box{
+    footer .container .box{
         width:100%;
     }
 }
 
 
-@media screen and (orientation:landscape) and (max-width:950px){
+@media screen and (orientation:landscape) and (max-height:500px){
     body{
         font-family: 'Courier New', Courier, monospace;
         font-size:15px;
@@ -119,7 +116,7 @@
     }
 
     .content .gamesell .product{
-        width:25%;
+        width:50%;
     }
 
     nav > ul.menu{
@@ -128,3 +125,31 @@
     }
 }
 
+@media screen and (orientation:landscape) and (max-width:900px){
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        font-size:15px;
+    }
+
+    aside {
+        display:none;
+    }
+
+    .content .gamesell .product{
+        width:100%;
+    }
+
+    nav > ul.menu{
+       
+        text-align:center;
+    }
+}
+
+@media screen and (max-width:500px){
+   
+
+    footer {
+        padding:0;
+    }
+    
+}

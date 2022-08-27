@@ -5,19 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="css/danhsachsanpham.css">
+    <link rel="stylesheet" href="css/danhsachsanpham-mobile.css">
     <script src="js/danhsachsanpham.js"></script>
     <title>Document</title>
 </head>
 <body onload="init();">
-    <div class="container flex">
+
+    <header class="flex">
+        <div class="flex">
+            <div class="img banner">
+                <div class="logo"><img src="img/logogame2-removebg.png" alt="logo"></div>
+            </div>
+            <span>
+                <h1 class="animate__animated animate__lightSpeedInRight">Shop bán game lớn nhất Việt Nam</h1>
+            </span>
+        </div>
+        </div>
+        
+        </div>
+    </header>
+    <div>
+        
+        <nav>
+            <div class="toggle-menu"><i class="fa-solid fa-bars"></i></div>
+            <ul class="menu flex">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li class="sub"> <a href="danhsachsanpham.html">Sản phẩm <i class="fa-solid fa-angle-down"></i></i></a>
+                    <ul class="menu subcontent">
+                        <li><a href="#gameoffline">Game offline</a></li>
+                        <li><a href="#gameonline">Game online</a></li>
+                        <li><a href="#x-box">Game x-box</a></li>
+                        <li><a href="#playstation">Game playstation</a></li>
+                    </ul>
+                <li><a href="news.html"target="_blank"> Tin tức & Thông báo</a></li>
+                <li><a href="#lienhe">Liên hệ</a></li>
+                <li class="login"><a href="login.html">Tài khoản <i class="fa-solid fa-circle-user"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container2 flex">
         <div>
         <ul class="danhmuc">
-            <li>Phím tắt</li>
-            <li><a href="#gameonline">Game online</a></li>
-            <li><a href="#gameoffline">Game offline</a></li>
-            <li><a href="">Game x-box</a></li>
-            <li><a href="#playstation">Game playstation</a></li>
+            <li><i class="fa-solid fa-bars-staggered"></i> <i class="fa-solid fa-bars-sort">Phím tắt</i></li>
+            <li><a href="#all"><i class="fa-solid fa-hand-point-right"></i> Toàn bộ game</a></li>
+            <li><a href="#gameonline"><i class="fa-solid fa-hand-point-right"></i> Game online</a></li>
+            <li><a href="#gameoffline"><i class="fa-solid fa-hand-point-right"></i> Game offline</a></li>
+            <li><a href="#x-box"><i class="fa-solid fa-hand-point-right"></i> Game x-box</a></li>
+            <li><a href="#playstation"><i class="fa-solid fa-hand-point-right"></i> Game playstation</a></li>
+            
             
         </ul>
         </div>
@@ -27,11 +65,11 @@
         </div>
 
         <div>
-        <div>
-            <img src="img/game2.jpg" alt="">
+        <div class="padding1">
+            <img src="img/game6.jpg" alt="">
         </div>
-        <div>
-            <img src="img/game2.jpg" alt="">
+        <div class="padding2">
+            <img src="img/game1.jpg" alt="">
         </div>
         </div>
 
@@ -55,6 +93,7 @@
 
  <br>
 
+ <h1 class="gioithieu">Danh mục sản phẩm</h1>
 
  <section id="gameonline">
     <br>
@@ -63,105 +102,113 @@
     <div class="products flex">
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
      </div>
@@ -187,105 +234,113 @@
     <div class="products flex">
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
@@ -300,105 +355,113 @@
     <div class="products flex">
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
@@ -413,66 +476,71 @@
     <div class="products flex">
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
      </div>
@@ -486,53 +554,57 @@
     <div class="products flex">
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
      </div>
@@ -545,53 +617,57 @@
     <div class="products flex">
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
      </div>
@@ -629,105 +705,113 @@
     <div class="products flex">
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
      </div>
@@ -742,105 +826,113 @@
     <div class="products flex">
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game2.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
      </div>
@@ -850,115 +942,212 @@
    <hr>
 <section id="all">
     <h2>TOÀN BỘ SẢN PHẨM</h2>
-    <input type="text" id="keyword" placeholder="Nhập tên game bạn muốn tìm">
+    <div>
+        <button id="find"><i class=" fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" id="keyword" placeholder="Nhập tên game bạn muốn tìm"> 
+    <ul id="suggest"></ul>
+    </div>
     <div class="products flex">
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
                     <img src="img/game1.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
-                    <img src="img/game1.jpg" alt="game số 1">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
+                    <img src="img/game7.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Outlast</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
-                    <img src="img/game1.jpg" alt="game số 1">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
+                    <img src="img/game2.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Fifa online 4</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
-                    <img src="img/game1.jpg" alt="game số 1">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
+                    <img src="img/game5.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Garry's Mod</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product1.html" class="anh-sp" target="_blank">
-                    <img src="img/game1.jpg" alt="game số 1">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
+                    <img src="img/game6.jpg" alt="game số 1">
                 </a>  
             </div>
             <div class="product-infor">
-                <a href="product1.html" class="product-name" target="_blank">Grand Theft Auto V - GTA V</a>
-                <div class="produc-price">456.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Five Night At Freedy</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
     
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
-                    <img src="img/game2.jpg" alt="game số 2">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
+                    <img src="img/game3.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Than Trung</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
-                    <img src="img/game2.jpg" alt="game số 2">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
+                    <img src="img/game5.jpg" alt="game số 2">
                 </a>   
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Standew Valley</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
 
         <div class="product-item center">
             <div class="product-top">
-                <a href="product2.html" class="anh-sp" target="_blank">
-                    <img src="img/game2.jpg" alt="game số 2">
+                <a href="chitietsanpham.html" class="anh-sp" target="_blank">
+                    <img src="img/game1.jpg" alt="game số 2">
                 </a>  
             </div>
-            <div class="product-infor center">
-                <a href="product2.html" class="product-name" target="_blank">Elden Ring (CD Key Steam)</a>
-                <div class="produc-price">790.000đ</div>
-                <a href="" class="buy">Mua ngay</a>
+            <div class="product-infor">
+                <a href="chitietsanpham.html" class="product-name" target="_blank">Terraria</a>
+                <div class="flex produc-price"><p class="giasau"> 456.000đ</p><p class="giatruoc">800.000đ</p><p class="percent">-40%</p></div>
+                
+                <a href="chitietsanpham.html" class="buy">Mua ngay</a>
             </div>
         </div>
      </div>
      <div class="end all center"></div>
      <button class="btn all">Load More</button>
 </section>
+
+<hr>
+<div class="banner2 flex">
+    <div class="left"><img src="img/banner_3-removebg-.png" alt="" srcset=""></div>
+    <div class="right">
+        <h3>Bạn chưa có tài khoản?</h3>
+        <div><p>Hãy tạo ngay một tài khoản để sử dụng đầy đủ các tính năng, tích lũy ưu đãi khi thanh toán các sản phẩm và tham gia vào chương trình Giới thiệu bạn bè nhận hoa hồng vĩnh viễn tại Game store.</p></div>
+        <div><a href="login.html">Đăng ký ngay</a>  Hoặc bạn đã có tài khoản? <a href="login.html"> Đăng nhập</a></div>
+    </div>
+</div>
+
+
+<a href="javascript:;" id="gotopbutton"><i class="fa-solid fa-circle-arrow-up"></i></a>
+
+<footer id="lienhe">
+    <div class="size container flex2">
+        <div class="aboutus box">
+            <h2>Về chúng tôi</h2>
+            <p class="size">Gamestore - cửa hàng chuyên cung cấp game bản quyền xin kính chào các bạn.<br>Với mong
+                muốn mang đến những tựa game lôi cuốn hấp dẫn nhất. <br>Tự hào là cửa hàng bán lẻ uy tín và chuyên
+                nghiệp nhất hiện nay. <br>Luôn cam kết phục vụ quý khách chu đáo, tận tâm, hoàn thành công việc
+                trong thời gian sớm nhất với mức chi phí hợp lý nhất <br>Để được tư vấn chi tiết quý khách có thể
+                liên hệ 0215 105 0431 <br>Cảm ơn! </p>
+            <ul class="icons flex2">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="links box">
+            <h2>Đường dẫn</h2>
+            <ul class="link">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="danhsachsanpham.html">Sản phẩm</a></li>
+                <li><a href="#lienhe">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="contacts box">
+            <h2>Thông tin liên hệ</h2>
+            <ul class="contact">
+                <li><span class="flex2 address">
+                        <i class="fa fa-map-marker size"></i>
+                        Đường số 1 <br>
+                        Quận 1 <br>
+                        Thành Phố Hồ Chí Minh Việt Nam </span>
+                </li>
+
+                <li>
+                    <span class="flex2">
+                        <i class="size fa fa-phone"></i>
+                        <p> <a href="#">+84 123 456 789</a>
+                            <br>
+                            <a href="#">+84 987 654 321</a>
+                        </p>
+                    </span>
+                </li>
+
+                <li>
+                    <span class="flex2">
+                        <i class="ti-email size"></i>
+                        <a href="#">diachiemail@gmail.com</a>
+                    </span>
+                </li>
+
+                <li>
+                    <form class="formemail">
+                        <input class="email" type="email" placeholder="Đăng ký email">
+                        <button onclick="guiemail()">Gửi</button>
+                        <script>
+                            function guiemail() {
+                                alert("Cám ơn bạn đã gửi email, chúng tôi sẽ phản hồi lại cho bạn sớm nhất");
+                            }
+                        </script>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 </html>

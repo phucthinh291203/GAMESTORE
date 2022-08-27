@@ -1,6 +1,6 @@
 function init(){
     var index =1;
-    var imgs=["img/screen_index.jpg","/img/screen_index_2.jpg"];
+    var imgs=["img/screen_index.jpg","img/screen_index_2.jpg"];
  changeImage = function(){
          document.getElementById('img').src = imgs[index];
          index++;
@@ -9,28 +9,49 @@ function init(){
 }       
 setInterval(changeImage,3000);
 
-let k = document.getElementById("keyword");
-k.addEventListener("change",function(){
-//XOA CLASS SEARCH
-let subjects = document.querySelectorAll("#all .product-item .product-name");
-for(let c of subjects)
-c.classList.remove("search");
-
-//THEM CLASS SEARCH
-if(this.value !=""){
-  for(let s of subjects){
-    let t=s.innerText.toLowerCase();
-    if(t.indexOf(this.value.toLowerCase())>=0){
-        s.parentElement.classList.remove("search");
-       setTimeout(function(){
- s.parentElement.classList.add("search");
-},100) 
-    }
-  }
-}});
 
 
+    
+    let kw = document.getElementById("keyword");
+    kw.addEventListener("change", function() {
+        let subjects = $("#all").find(".product-name");
+        for (let s of subjects) {
+            let t = s.textContent.toLowerCase();
+            if (t.indexOf(this.value.toLowerCase()) >= 0) {
+                s.parentElement.classList.remove("search");
+                setTimeout(function() {
+                    s.parentElement.classList.add("search");
+                }, 100)
+            }
+                
+        }
+    });
+  
 
+
+
+var games = ['Gta V' ,'Fifa' , 'Garry mod' ,'Outlast' ,'Terraria','Five night','Standew Valley','Than Trung'];
+    $("#keyword").keyup(function(){
+        let txt = $(this).val().toLowerCase();
+        let h ='';
+
+
+        for(let c of games)
+            if(c.toLowerCase().indexOf(txt) >= 0 ){
+               h += `
+                <li style="min-width:200px"><a href="#all">${c}</a></li>
+                `;
+             }
+       if( h != ''){
+           $("#suggest").html(h);
+           $("#suggest").show();
+       }      
+    });
+
+    $("#suggest").on("click","a",function(){
+        $("#keyword").val($(this).text());
+        $("#suggest").hide();
+    });
         
 $(document).ready(function(){
     $("#chienthuat .products .product-item").slice(0,4).show();
@@ -122,7 +143,64 @@ $(document).ready(function(){
             
         }
     )
+
+    $("#gotopbutton").hide()
+
+    $(window).scroll(function(){
+         if($(this).scrollTop() >= 10){
+                 $("nav").css({
+                         "position":"fixed",
+                         "left":0,
+                         "right":0,
+                         "z-index":998,
+                         "opacity":0.8,
+                 })  
+ 
+                 
+         }
+ 
+         else {
+                 $("nav").css({
+                         "position":"relative",
+                         "z-index":998,
+                         "opacity":1,
+                         "top":0,
+                 })   
+ 
+                 $(".toggle-menu").css({
+                         "position":"fixed",
+                         
+                 })
+                         
+         }
+    })
+ 
+    $(window).scroll(function(){
+         if($(this).scrollTop() >= 100)
+         {
+         $("#gotopbutton").show("slow")
+         $(".toggle-menu").show("slow")
+         }
+         else 
+         $("#gotopbutton").hide("slow")
+    })
+ 
+    $("#gotopbutton").click(function(){
+         $("html,body").animate({
+                 scrollTop:0
+         },500);
+    })
+    
+    
 });
   
+const nav=document.querySelector('.menu');
+const toggle_menu=document.querySelector('.toggle-menu');
+
+toggle_menu.onclick = function(){
+ nav.classList.toggle('hide');
+ toggle_menu.classList.toggle('show');
+}
+
 }
 

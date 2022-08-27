@@ -1,9 +1,12 @@
 function init() {
 
-    function TaoThanhSearch(){
-        document.getElementsByClassName('search-form').style.scaleY = 1;
-}
+    const nav=document.querySelector('.menu');
+const toggle_menu=document.querySelector('.toggle-menu');
 
+toggle_menu.onclick = function(){
+ nav.classList.toggle('hide');
+ toggle_menu.classList.toggle('show');
+}
 
     let m = document.getElementById("main");
     let images = document.querySelectorAll(".thumb img");
@@ -49,7 +52,7 @@ $(document).ready(function(){
 
         
         $(window).scroll(function(){
-            if($(this).scrollTop() >= 50){
+            if($(this).scrollTop() >= 110){
                     $("nav").css({
                             "position":"fixed",
                             "left":0,
@@ -92,13 +95,6 @@ $(document).ready(function(){
         },500);
    })
 
-       const nav=document.querySelector('nav');
-const toggle_menu=document.querySelector('.toggle-menu');
-
-toggle_menu.onclick = function(){
- nav.classList.toggle('hide');
- 
-}
 
 
     }); 

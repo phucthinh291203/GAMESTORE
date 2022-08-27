@@ -1,34 +1,59 @@
+html{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 *{
     padding:0;
     margin:0;
-    box-sizing:border-box;
+    box-sizing:border-box !important;
 }
 
 .flex{
     display:flex;
     flex-wrap:wrap;
+    text-align:center;
 }
 
-.container{
+.flex2{
+  display:flex;
+  text-align:left;
+}
+
+.padding1{
+  padding-bottom:15px;
+}
+.padding2{
+  padding-top:20px;
+}
+
+h1.gioithieu{
+  margin-top:15px;
+  text-align:center;
+  color:red;
+}
+
+.container2{
     width:90%;
     margin:0 auto;
     color:blue;
+    border:2px solid black;
+    background-color:#ccc
 }
 
-.container > div{
+.container2 > div{
     width:25%;
    padding:15px;
    margin-top:5px;
    border-radius:5px;
-   box-shadow:  1px; 
+   
 }
 
-.container img{
+.container2 img{
     width:100%;
     height:-webkit-fill-available;
 }
 
-.container > div.slidershow{
+.container2 > div.slidershow{
     width:50%;
     
 }
@@ -38,6 +63,7 @@ ul.danhmuc{
     font-size:20px;
     text-align:left;
     text-decoration: none;
+    color:#000000;
 }
 
 ul.danhmuc > li{
@@ -47,15 +73,18 @@ ul.danhmuc > li{
 
 ul.danhmuc > li > a{
     text-decoration:none;
+    color:#000000;
 }
 
+
+/* tab */
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
   }
   
-  /* Style the buttons inside the tab */
+  
   .tab button {
     background-color: inherit;
     float: left;
@@ -67,17 +96,17 @@ ul.danhmuc > li > a{
     font-size: 17px;
   }
   
-  /* Change background color of buttons on hover */
+  
   .tab button:hover {
     background-color: #ddd;
   }
   
-  /* Create an active/current tablink class */
+  
   .tab button.active {
     background-color: #ccc;
   }
   
-  /* Style the tab content */
+  
   .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -86,14 +115,16 @@ ul.danhmuc > li > a{
   }
 
   .tabcontent {
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    animation: fadeEffect 1s; 
   }
   
-  /* Go from zero to full opacity */
+  
   @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+  /* end tab */
 
 html{
   scroll-behavior: smooth;
@@ -101,7 +132,7 @@ html{
 
 section{
     width:90%;
-    margin:20px auto;
+    margin:0px auto;
    padding:15px;
    box-shadow:0 10px 20px;
 }
@@ -198,21 +229,486 @@ hr{
 }
 
 .search{
-  outline: 3px solid transparent;
-  animation: doivien 1s 5;
+  /* border: 3px solid transparent; */
+  animation:doivien 2s;
 }
 
 @keyframes doivien{
-  from {
-      outline-color:transparent;
+ from{
+      background-color:transparent;
+      color:yellow;
+      display:none;
   }
 
   to {
-      outline-color:red;
+     background-color:red;
+     color:yellow;
+     display:none;
+  
   }
 }
 
 #keyword{
-  width:20%;
+  width:40%;
   height:30px;
+}
+
+#all .product-item{
+  display:none;
+}
+
+.hide{
+  display:none;
+}
+
+
+#suggest{
+  display:absolute;
+  list-style-type: none;
+  height:100px;
+  overflow:auto;
+}
+
+#suggest > li{
+  padding:5px;
+  background-color:transparent;
+  margin-left:20px;
+}
+#suggest > li > a{
+  text-decoration: none;
+}
+
+#suggest li:hover{
+  background-color:#446084;
+  color:white;
+}
+
+.banner2{
+  width:100%;
+  height:min-content;
+  background-color:blue;
+  color:white;
+  align-items: center;
+  margin:10px 0;
+  text-align: center;
+}
+
+.banner2 .left{
+  width:30%;
+  
+}
+
+.banner2 .right{
+  width:70%;
+  text-align:left !important;
+  font-size:17px;
+}
+
+.banner2 .left img{
+  width:70%;
+  height:auto;
+  padding:10px;
+}
+
+
+.right div{
+  margin-top:20px;
+}
+
+.right p{
+  padding:15px 15px 15px 0px;
+  font-size:20px;
+}
+
+.right h3{
+  font-size:30px;
+  color:coral;
+}
+
+.right a:first-child{
+  padding:7px;
+  background-color:#2985FF;
+  color:white;
+  border-radius:5px;
+  text-decoration:none;
+}
+
+.right a:first-child:hover{
+  filter: brightness(1.2);
+}
+
+
+.right a:last-child{
+  color:#FFFFFF;
+  text-decoration:none;
+}
+
+
+
+/* header */
+header span{
+  color:#01d6fe;
+  font-weight: bold;
+  margin:auto 0;
+  font-style: italic;
+  align-items:center;
+}
+
+header{
+  background-image:url("/img/banner.png");
+  justify-content: space-around;
+  padding:5px;
+  align-items:center;
+  width:100%;
+}
+
+header .logo{
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+}
+
+
+header h2{
+  color:#E3454B;
+  font-style: italic;
+  text-decoration:line-through;
+  margin:0;
+}
+
+header .img{
+  overflow:hidden;
+  width:150px;
+}
+
+header img{
+  width:100%;
+  height:120px;
+  margin-top:-19px;
+}
+
+
+
+
+
+ul.menu{
+  list-style-type: none;
+  justify-content: flex-start;
+  margin-left:4%;
+}
+
+nav{
+  background:linear-gradient(to left,rgb(123, 0, 255), blue,#0F0330);
+  transition:ease-in-out 0.5s;
+}
+
+.hide{
+  display:none;
+}
+
+ul.menu > li{
+  min-width:120px;
+  margin:0 1%;
+}
+
+ul.menu > li > a{
+  color:white;
+  text-decoration:none;
+  display:block;
+  text-transform:uppercase;
+  font-weight:bold;
+  padding:15px;
+  font-size:16px;
+  
+}
+
+
+ul.menu .subcontent {
+  background-color:black;
+  position:absolute;
+  display:none;
+  min-width:200px;
+  box-shadow:2px 2px #010101;
+  transition:0.5s;
+  z-index:100;
+  margin:0;
+  
+}
+
+
+.menu.subcontent > li{
+  text-align: left !important;
+}
+
+
+ul.menu .sub:hover .subcontent{
+ display:block;
+ 
+}
+
+
+ul.menu > li:hover{
+  background-color:#01d6fe;
+  transition:0.5s ease;
+}
+ul.menu .subcontent > li:hover{
+  background-color:#01d6fe;
+}
+
+ul.menu > li:hover >a,
+ul.menu .subcontent > li:hover >a{
+  transition:0.5s ease;
+  color:#0000FF; 
+}
+
+nav .subcontent > li{
+  text-align:left;
+  padding:7px;
+}
+
+
+ul.menu > li.login{
+margin-left:auto;
+}
+
+.toggle-menu{
+  color:white;
+  font-size:25px;
+  border:1px solid white;
+  background-color:#999;
+  padding:10px;
+  z-index:999;
+  width:fit-content;
+  position:fixed;
+}
+
+nav .toggle-menu .fa-solid.fa-bars{
+  color:red;
+  transition:linear 0.2s;
+}
+
+nav .toggle-menu:hover .fa-solid.fa-bars {
+  color:blue;
+}
+
+
+
+/* end header */
+
+
+/* footer */
+footer{
+  background-color:#010101;
+  color:#999;
+  position:relative;
+  bottom:0;
+ width:100%;
+ height:auto;
+ padding:50px 100px;
+}
+
+
+footer ul{
+  list-style-type:none;
+}
+
+footer ul li{
+  padding:5px 0 ;
+}
+
+footer ul a{
+  text-decoration:none;
+  color:#999;
+}
+
+footer .container{
+  justify-content: space-between;
+  flex-wrap:wrap; 
+}
+
+footer i{
+  padding:0 15px 0 0;
+}
+
+.size{
+  font-size:17px;
+}
+
+
+
+.container > div{
+  width:var(--width);
+  padding:5px;
+}
+
+.container .aboutus{
+  width:45%;
+}
+
+.container h2 {
+  padding:10px 0;
+  position:relative;
+  color:#fff;
+}
+
+.container h2::after{
+  content:"";
+  height:2px;
+  width:50px;
+  background-color:#FF0000;
+  position:absolute;
+  display:block;
+}
+
+.aboutus ul{
+  margin-top:20px;
+}
+
+.aboutus .icons li{
+  margin-right:10px;
+  border-radius:4px;
+  background-color:#222;
+  width:40px;
+  height:40px;
+  padding-top:0;
+}
+
+.aboutus .icons .fa{
+  font-size:20px;
+  color:#fff;
+}
+
+.icons li  i{
+   display: flex;
+   width:55px;
+  height:40px;
+  justify-content: center;
+  align-items:center;
+}
+
+.icons li:hover {
+  background-color:#FF0000;
+}
+
+.formemail input.email{
+  height:40px;
+  width:240px;
+  font-size:18px;
+  padding:3px;
+}
+
+.formemail button{
+  font-size:20px;
+  padding:5px 20px;
+  margin-top:10px;
+  background-color:#222;
+  color:white;
+  border-radius:4px;
+  border:#FF0000;
+}
+
+.formemail button:hover{
+  background-color:#FF0000;
+  border:#FF0000;
+}
+
+section {
+  margin-top:100px;
+}
+
+.link >li > a:hover{
+  color:#fff;
+}
+
+.contact i{
+  font-size:20px;
+  color:#fff;
+}
+
+/* end footer */
+
+
+/* go to top */
+#gotopbutton{
+  justify-content:space-between;
+  position:fixed;
+  background:yellowgreen;
+  bottom:40px;
+  right:50px;
+  text-decoration:none;
+  color:white;
+  z-index: 999;
+  font-size:26px;
+  padding:15px;
+  border-radius:50%;
+}
+
+/* end go to top */
+
+.products .product-item{
+  text-align:left;
+  font-size:20px;
+}
+
+
+.products .product-item .product-name{
+  text-decoration: none;
+  color:black;
+}
+
+
+
+
+.products .product-item .produc-price .giasau{
+  margin:5px 0;
+  font-weight:bold;
+  color:black;
+}
+
+.products .product-item .produc-price .giatruoc{
+  margin:5px 10px;
+  text-decoration: line-through;
+  color:grey;
+  
+}
+
+#gameonline .products .product-item .product-name{
+  text-decoration: none;
+  color:pink;
+}
+
+#gameonline .products .product-item .giasau{
+  text-decoration: none;
+  color:rgb(143, 63, 76);
+}
+
+.products .product-item .produc-price .percent{
+  color:white;
+  background-color:red;
+  padding:5px;
+  font-size:16px;
+  border-radius:5px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.products .product-item .produc-price a{
+  text-decoration: none;
+  color:orange;
+  border:2px solid blue;
+  border-radius: 5px;
+  padding:2px;
+  margin-top:5px;
+}
+
+.product-item .buy{
+  text-decoration: none;
+  color:orange;
+  font-size:20px;
+  margin-top:5px;
+}
+
+.giamgia{
+  display:flex;
+
 }
